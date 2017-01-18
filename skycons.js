@@ -1,5 +1,13 @@
-(function(global) {
-  "use strict";
+"use strict";
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory;
+  } else {
+    root.skycons = factory();
+  }
+})(this, function () {
 
   /* Set up a RequestAnimationFrame shim so we can animate efficiently FOR
    * GREAT JUSTICE. */
@@ -722,5 +730,5 @@
     }
   };
 
-  global.Skycons = Skycons;
-}(this));
+  return Skycons;
+});
