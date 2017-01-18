@@ -1,0 +1,8 @@
+{
+  "name": "skycons",
+  "version": "0.0.1",
+  "main": "skycons.js",
+  "repository": "git@github.com:mojotech/skycons.git",
+  "author": "Timothy Barmann <tbarmann92@gmail.com>",
+  "license": "MIT"
+}
